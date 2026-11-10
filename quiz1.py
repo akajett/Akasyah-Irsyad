@@ -1,35 +1,35 @@
-nama = input("Masukkan nama mahasiswa: ")
+nama = input ("masukkan nama mahasiswa: ")
 
-if nama == "Andi":
+if nama == "andi":
     target = 70
-elif nama == "Budi":
+elif nama == "budi":
     target = 75
-elif nama == "Citra":
+elif nama == "citra":
     target = 80
 else:
-    print("Nama mahasiswa tidak ditemukan!")
+    print("nama mahasiswa tidak ditemukan!")
     exit()
 
-print("Nama mahasiswa :", nama)
+print("nama mahasiswa : ", nama)
 print("Target nilai   :", target)
 
 ulang = 1
 lulus = False
 
 while ulang <= 3:
-    nilai = int(input("Masukkan nilai ujian ke-" + str(ulang) + ": "))
+    nilai = int(input("masukkan nilai ujian ke-" + str(ulang) + ": "))
 
     if nilai >= target:
         lulus = True
         break
     else:
-        print("Nilai belum mencapai target!")
+        print("nilai belum mencapai target!")
         ulang += 1
 
 print("\nHASIL AKHIR")
 
 if lulus:
     print(nama, "berhasil lulus!")
-    print("Ujian ke-", ulang)
+    print("ujian ke-", ulang)
 else:
-    print(nama, "tidak lulus setelah 3 kali ujian.")
+    print(nama,"tidak lulus setelah 3 kali ujian.")
